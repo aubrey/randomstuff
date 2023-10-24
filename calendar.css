@@ -1,0 +1,106 @@
+:host {
+  --color-bg-default: #fff;
+  --color-fg-primary: #00324D;
+  --color-fg-default: #fff;
+  --color-fg-accent: #30FFC1;
+  --color-bg-inrange: #00324D;
+  --day-width: 50px;
+  --day-height: 50px;
+}
+
+.container.inline {
+	box-shadow: none;
+	border: 1px solid #EFEBE3;
+	border-radius: 12px;
+}
+
+.calendar {
+	font-family: 'PP Mori';
+	box-shadow: none;
+}
+
+/* increase start and end */
+.container.range-plugin .calendar>.days-grid>.day.start,
+.container.range-plugin .calendar>.days-grid>.day.end {
+  font-weight: bold;
+  transform: scale(1.0);
+  z-index: 1;
+}
+
+.calendar>.header .month-name{
+	font-size: 26px;
+}
+
+.day.unit{
+  font-size: 18px!important;
+  font-weight: 600;
+}
+
+.day.unit:hover {
+	border-radius: 30px;
+	background: #f5f5f5;
+	border: 1px solid #f5f5f5!important;
+}
+
+.calendar>.header {
+	padding-bottom: 20px;
+}
+
+.month-name {
+	color: #00324D;
+}
+
+/*Start Arrow*/
+.container.range-plugin .calendar>.days-grid>.day.start {
+	border-radius: 30px 0px 0px 30px;
+	color: #30FFC1;
+}
+
+/*End Arrow*/
+.container.range-plugin .calendar>.days-grid>.day.end {
+	border-radius: 0px 30px 30px 0px;
+	color: #30FFC1;
+}
+
+.day.unit {
+	color: #00324D;
+}
+
+.day.unit.in-range {
+	color: #30FFC1;
+}
+
+.day.unit.in-range:hover {
+	color: #30FFC1;
+}
+
+.range-plugin-tooltip {
+	font-family: 'PP Mori';
+	color: #737373;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 12px;
+	padding: 8px 12px;
+}
+
+/*Today*/
+
+.day.unit.today {
+	
+	border-radius: 30px;
+	border-color: #f5f5f5;
+	color: #1B5B7D!important;
+}
+
+
+.container.range-plugin .calendar>.days-grid>.today.in-range {
+	color: #30FFC1!important;
+	background: #1B5B7D;
+	border-color: #00324D;
+}
+/*00324D   Navy*/ 
+/*30FFC1   Minty*/
+
+/*A5B3BF   Greyed Out*/
+
+/*EFEBE3   Outside Stroke*/
